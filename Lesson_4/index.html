@@ -18,12 +18,71 @@
         </div>
     </header>
     <main>
-        <section>
+        <section id="section1">
             <div class="container">
                 <h2 class="title">Topic</h2>
+                <!-- 
+                    > - вложеність
+                    div.box>ul.list>li.list__item*5 
+                -->
+                <div class="box">
+                    <ul class="list">
+                        <li class="list__item"></li>
+                        <li class="list__item"></li>
+                        <li class="list__item"></li>
+                        <li class="list__item"></li>
+                        <li class="list__item"></li>
+                    </ul>
+                </div>
 
+                <!-- 
+                    + - створює сусідні елементи
+                div.box2>div+p+ul>li
+                 -->
+                <div class="box2">
+                    <div></div>
+                    <p></p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <!-- 
+                    ul.list>li.item$*4
+                 -->
+                <ul class="list">
+                    <li class="item1"></li>
+                    <li class="item2"></li>
+                    <li class="item3"></li>
+                    <li class="item4"></li>
+                </ul>
+
+                <ul>
+                    <li class="it001"></li>
+                </ul>
+
+                <div id="box3"></div>
+
+                <nav><a href="#" title="Test link"></a><a href="#" title="Test link"></a><a href="#"
+                        title="Test link"></a><a href="#" title="Test link"></a><a href="#" title="Test link"></a></nav>
             </div>
         </section>
+        <ul>
+            <li class="list_item list_test test"><a href="#">hello 1</a></li>
+        </ul>
+        <!-- 
+            div>(div>p*2)+ul>li*2
+         -->
+        <div>
+            <div>
+                <p></p>
+                <p></p>
+            </div>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
     </main>
     <footer>
 

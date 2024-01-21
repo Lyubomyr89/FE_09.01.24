@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <title>Lesson 4</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/">
+                    <img src="../../images/icons/logo.svg" alt="Logo" title="Hillel It Scool">
+                </a>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="/" class="menu__item-link">Головна</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="/" class="menu__item-link">Заняття</a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item">
+                                <a href="./Lessons/Lesson-1/index.html" class="sub-menu__item">Заняття 1</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="./Lessons/Lesson-2/index.html" class="sub-menu__item">Заняття 2</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="./Lessons/Lesson-3/index.html" class="sub-menu__item">Заняття 3</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="./Lessons/Lesson-4/index.html" class="sub-menu__item">Заняття 4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="/" class="menu__item-link">Наша група</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="/" class="menu__item-link">Про нас</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section" id="section1">
+            <div class="container">
+                <h1 class="title">Emmet plugin</h1>
+                <div class="emmet-section">
+                    <code>
+                        <!-- p.paragraph{lorem} -->
+                        p.paragraph{lorem}
+                    </code>
+                    <p class="paragraph">lorem</p>
+                </div>
+
+                <div class="emmet-section">
+                    <code>
+                        <!-- > - вложеність div.box>ul.list>li.list__item{Item_&}*5 -->
+                        div.box>ul.list>li.list__item{Item_&}*5
+                    </code>
+                    <div class="box">
+                        <ul class="list">
+                            <li class="list__item">Item_1</li>
+                            <li class="list__item">Item_2</li>
+                            <li class="list__item">Item_3</li>
+                            <li class="list__item">Item_4</li>
+                            <li class="list__item">Item_5</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="emmet-section">
+                    <code>
+                        <!--  + - створює сусідні елементи div.box2>div+p+ul>li{List Item $} -->
+                        div.box2>div+p+ul>li{List Item $}
+                    </code>
+                    <div class="box2">
+                        <div></div>
+                        <p></p>
+                        <ul>
+                            <li>List Item 1</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="emmet-section">
+                    <code>
+                <!-- ul.list>li{Hello World}.item$*2 -->
+                    ul.list>li{Hello World}.item$*2
+                    </code>
+                    <ul class="list">
+                        <li class="item1">Hello World</li>
+                        <li class="item2">Hello World</li>
+                    </ul>
+                </div>
+                <div class="emmet-section">
+                    <code>
+                        ul.list>li.item${Пункти саиску $}*4
+                    </code>
+                    <ul class="list">
+                        <li class="item1">Пункти саиску 1</li>
+                        <li class="item2">Пункти саиску 2</li>
+                        <li class="item3">Пункти саиску 3</li>
+                        <li class="item4">Пункти саиску 4</li>
+                    </ul>
+                </div>
+
+                <div class="emmet-section">
+                    <code>
+                        <!-- ul>li.it$$$ -->
+                        ul>li{Items $$$}.it$$$
+                    </code>
+                    <ul>
+                        <li class="it001">Items 001</li>
+                    </ul>
+                </div>
+
+                <div class="emmet-section">
+                    <code>
+                        div#box3
+                    </code>
+                    <div id="box3"></div>
+                </div>
+
+                <div class="emmet-section">
+                    <code>
+                        nav>a[href="#" title="Test link"]{Test link $}*5
+                    </code>
+                    <nav>
+                        <a href="#" title="Test link">Test link 1</a>
+                        <a href="#" title="Test link">Test link 2</a>
+                        <a href="#" title="Test link">Test link 3</a>
+                        <a href="#" title="Test link">Test link 4</a>
+                        <a href="#" title="Test link">Test link 5</a>
+                    </nav>
+                </div>
+
+                <div class="emmet-section">
+                    <code>
+                        ul>li.list_item.list_test.test>a[href="#"]{hello $}
+                    </code>
+                    <ul>
+                        <li class="list_item list_test test"><a href="#">hello 1</a></li>
+                    </ul>
+                </div>
+                <div class="emmet-section">
+                    <code>
+                        <!--  div>(div>p*2)+ul>li*2  -->
+                        div>(div>p{text}*2)+ul>li{item$}*2
+                    </code>
+                    <div>
+                        <div>
+                            <p>text</p>
+                            <p>text</p>
+                        </div>
+                        <ul>
+                            <li>item1</li>
+                            <li>item2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 50px;
+}
+
+#box3 {
+  background-color: red;
+  height: 22px;
+}
+
+[href="#"] {
+  color: brown;
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.emmet-section {
+  padding: 20px;
+  background-color: #e4e4e4;
+  border-radius: 10px;
+}
+
+.emmet-section:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+code {
+  background-color: #221e1e;
+  padding: 20px;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 20px;
+  color: crimson;
+  font-size: 16px;
+}
+
+ul {
+  padding-left: 20px;
+}

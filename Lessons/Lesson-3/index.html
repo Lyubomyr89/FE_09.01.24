@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Тег <title> назва вкладки в браузері -->
+    <title>Lesson 3</title>
+</head>
+
+<body>
+    <header>Header</header>
+    <main>
+        <section>
+            <h1>Git | GitHub</h1>
+
+            <!-- Git commands -->
+            <p><strong>Користні команди</strong></p>
+            <ul>
+                <li>git clone - Клонує репозиторій</li>
+                <li>git pull - Стягує оновлення з репозиторію</li>
+                <li>git push - Записує оновлення коду на віддалений репозиторій</li>
+                <li>git status - показує статус в локальному репозитрії</li>
+                <li>git add . - гіт починає відслідковувати зміни що внесені в файл</li>
+                <li>git commit -m “commit text” - зберігає поточний стан файла</li>
+                <li>git commit -am “text commit ” - короткий запис команда git add . та git commit -m “” (Працює лише
+                    для вже відстежуваних файлів)</li>
+                <li>git log - показує історію комітів</li>
+                <li>git branch - показує список локальних гілок</li>
+                <li>git branch name - створює гілку з ім’ям name</li>
+                <li>git branch -a - показує список віддалених гілок</li>
+                <li>git checkout -b name - створює нову гілку з ім’ям “name” і переходить в неї</li>
+                <li>git checkout name - перехід до потрібної гілки</li>
+                <li>git merge name - злятя гілки “name” в поточну</li>
+                <li>git merge --abort - відміна злиття гілок</li>
+                <li>git push -u origin name - перший пуш нової локальної гілки на гітхаб</li>
+                <li>git branch -d name - видалення локальної гілки (потрібно з неї вийти)</li>
+                <li>git push origin --delete name - видалення віддаленої гілки на гітхабі</li>
+                <li>git stash - ховає внесені зміни в “карман”. (Використовується тоді коли потрібно перейти в іншу
+                    гілку але не хочеться робити коміт)</li>
+                <li>git stash apply - відновлює код з “кармана” (Повертає схований код)</li>
+            </ul>
+            <div>
+                <img src="./images/download.png" alt="Git">
+                <img src="./images/git-branches-merge.png" alt="Git">
+            </div>
+        </section>
+    </main>
+    <footer>Footer</footer>
+</body>
+
+</html>

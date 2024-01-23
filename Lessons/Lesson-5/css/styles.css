@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: yellow; */
+}
+
+h1 {
+  color: #222222;
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h1,
+h2 {
+  text-decoration: underline;
+}
+
+.title {
+  color: blue;
+}
+
+a {
+  color: coral;
+  text-decoration: none;
+}
+
+.menu__item-link {
+  color: brown;
+}
+
+.menu__item {
+  color: crimson;
+}
+
+.menu__item {
+  color: burlywood;
+}
+
+.menu__item-link.menu__item-link--red {
+  color: blueviolet;
+}
+
+.menu {
+  border: 1px solid;
+}
+
+.header {
+  margin-bottom: 60px;
+  border: 3px solid green;
+}
+
+header li {
+  background-color: orangered;
+}
+
+header .menu__item {
+  margin-bottom: 20px;
+}
+
+.menu a {
+  font-size: 22px;
+}
+
+.text-box p {
+  text-decoration: underline;
+}
+
+.text-box > p {
+  color: blue;
+  font-size: 20px;
+}
+
+#btn1 {
+  background-color: yellow;
+}
+
+button + div {
+  border: solid 2px red;
+}
+
+div ~ p {
+  padding: 20px;
+  color: palevioletred;
+  background-color: #ccc;
+}
+
+[href="#"] {
+  font-size: 32px;
+}
+
+[href] {
+  font-weight: 900;
+}
+
+[title] {
+  margin-top: 20px;
+  border: 3px solid yellowgreen;
+}
+
+[href^="http"] {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+}
+
+[title*="efa"] {
+  background-color: olivedrab;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+[title$="t2"] {
+  display: block;
+  margin-top: 20px;
+  width: 100px;
+}

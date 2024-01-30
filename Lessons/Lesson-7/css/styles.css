@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  text-align: center;
+}
+
+body {
+  padding-bottom: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* vw | vh */
+
+.clamp-title {
+  font-size: clamp(22px, 5vw, 80px);
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+p {
+  /* rem | em */
+
+  font-size: 2rem;
+}
+
+.text-test-2 {
+  font-size: 20px;
+}
+
+.text-test-2 p {
+  font-size: 2em;
+}
+
+.section {
+  text-align: right;
+}
+
+.float-box {
+  border: 1px solid red;
+  text-align: center;
+}
+
+.float-row {
+  background-color: yellow;
+  margin-bottom: 20px;
+}
+
+.float-item {
+  width: 200px;
+  height: 200px;
+}
+
+.float-item-1 {
+  float: left;
+  background-color: coral;
+}
+.float-item-2 {
+  background-color: rgb(84, 64, 56);
+  float: right;
+}
+
+/* Вирішення проблеми з порядком елементів */
+.float-item-wrapper {
+  float: right;
+}
+.float-item-3 {
+  float: left;
+  background-color: rgb(11, 21, 44);
+  height: 100px;
+}
+.float-item-4 {
+  background-color: rgb(173, 150, 141);
+  float: left;
+  height: 100px;
+}
+
+/* Вирішення проблеми з порядком елементів */
+
+.float-row-2 {
+  background-color: rgb(119, 47, 30);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.float-img {
+  padding: 40px 0;
+  text-align: justify;
+  background-color: rgb(246, 243, 246);
+}
+
+.float-img img {
+  float: left;
+  margin-right: 20px;
+}
+
+.box {
+  position: relative;
+  text-align: left;
+  border: 2px solid;
+  display: inline-block;
+}
+
+.box::before,
+.box::after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 100%;
+  position: absolute;
+  transition: height 1.3s cubic-bezier(0.23, 1.07, 0.58, 1.24);
+  left: 0;
+}
+
+.box::before {
+  background: rgba(181, 176, 17, 0.426);
+  top: 0;
+}
+
+.box::after {
+  background: rgb(255 27 27 / 27%);
+  bottom: 0;
+}
+
+.box:hover::before {
+  height: 50%;
+}
+
+.box:hover::after {
+  height: 50%;
+}
+
+.box img {
+  width: 600px;
+  height: auto;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}

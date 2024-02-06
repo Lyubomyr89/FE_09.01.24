@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <title>Lesson TMP</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/">
+                    <img src="../../images/icons/logo.svg" alt="Logo" title="Hillel It Scool">
+                </a>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="/" class="menu__item-link">Головна</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="/" class="menu__item-link">Заняття</a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item">
+                                <a href="../Lesson-1/index.html" class="sub-menu__item">Заняття 1</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="../Lesson-2/index.html" class="sub-menu__item">Заняття 2</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="../Lesson-3/index.html" class="sub-menu__item">Заняття 3</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="../Lesson-4/index.html" class="sub-menu__item">Заняття 4</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="../Lesson-5/index.html" class="sub-menu__item">Заняття 5</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="../Lesson-6/index.html" class="sub-menu__item">Заняття 6</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="../Lesson-7/index.html" class="sub-menu__item">Заняття 7</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="../Lesson-8/index.html" class="sub-menu__item">Заняття 8</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="/" class="menu__item-link">Наша група</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="/" class="menu__item-link">Про нас</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="title">Box-sizing</h1>
+                <div class="box-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laudantium.</div>
+
+                <div class="sizes">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2 class="title">Форми</h2>
+                <!-- method="get", method="post" -->
+                <form action="./index.html" name="auth" method="post" autocomplete="on">
+                    <!-- <fieldset>
+                        <legend>Auth:</legend> -->
+                    <div class="input-row">
+                        <label for="firstname">First Name</label>
+                        <input type="text" autofocus required name="firstname" tabindex="1" id="firstname"
+                            placeholder="Input First Name" minlength="2" maxlength="30">
+                    </div>
+                    <div class="input-row">
+                        <label>
+                            <span>Last Name</span>
+                            <input type="text" required name="lastname" placeholder="Input Last Name" minlength="2"
+                                maxlength="2">
+                        </label>
+                    </div>
+                    <div class="input-row">
+                        <label>
+                            <span>Password</span>
+                            <input type="password" required name="password" placeholder="password" minlength="6"
+                                maxlength="8">
+                        </label>
+                    </div>
+                    <div class="input-row">
+                        <label>
+                            <span>Phone</span>
+                            <!-- pattern="" -->
+                            <input type="tel" name="phone" placeholder="Input Phone" value="078532563232">
+                        </label>
+                    </div>
+                    <div class="input-row">
+                        <label>
+                            <span>Email</span>
+                            <input type="email" required name="email" placeholder="Input Email">
+                        </label>
+                    </div>
+                    <div class="input-row">
+                        <label>
+                            <span>Man</span>
+                            <input checked type="radio" name="male" value="man">
+                        </label>
+                        <label>
+                            <span>Woman</span>
+                            <input type="radio" name="male" value="woman">
+                        </label>
+                    </div>
+
+                    <div class="input-row">
+                        <p>Age</p>
+                        <label>
+                            <input type="checkbox" name="age1" value="0-18">
+                            <span>0-18</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" checked name="age2" value="18-40">
+                            <span>18-40</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="age3" value="40-60">
+                            <span>40-60</span>
+                        </label>
+                    </div>
+
+                    <div class="input-row">
+                        <label for="position">Position</label>
+                        <!-- multiple, size="3" -->
+                        <select name="position" id="position">
+                            <option selected disabled>Select Position</option>
+                            <option value="FronEnd">FronEnd</option>
+                            <option value="BackEnd">BackEnd</option>
+                            <option value="UI/UX">UI/UX</option>
+                        </select>
+
+                        <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+                        <datalist id="ice-cream-flavors">
+                            <option value="Chocolate"></option>
+                            <option value="Coconut"></option>
+                            <option value="Mint"></option>
+                            <option value="Strawberry"></option>
+                            <option value="Vanilla"></option>
+                        </datalist>
+                    </div>
+                    <div class="input-row">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Input message"></textarea>
+                    </div>
+                    <!-- </fieldset> -->
+                    <div class="buttons">
+                        <button type="submit">Send</button>
+                        <button type="reset">Reset</button>
+                        <input type="submit" value="Input Submit">
+                    </div>
+                </form>
+                <button type="button">Simple Button</button>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2 class="title">Таблиці</h2>
+                <table>
+                    <caption>Worker</caption>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="bg-yellow">1</td>
+                            <td>Alex</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Piter</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Vova</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Test</td>
+                            <td>Test</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Sum <span>1500</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <table>
+                    <caption>Test rows</caption>
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th rowspan="0">rowspan=0</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" colspan="1">January</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>$1300</td>
+                        </tr>
+                        <tr>
+                            <td>February</td>
+                            <td>$1300</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Mart</td>
+                            <td>$1300</td>
+                        </tr>
+                        <tr>
+                            <td>$5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

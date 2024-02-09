@@ -40,10 +40,10 @@ thead {
   font-weight: 700;
 }
 
-tbody tr:nth-child(odd) {
+table:not(.worker) tbody tr:nth-child(odd) {
   background-color: #ccc;
 }
-tbody tr:nth-child(even) {
+table:not(.worker) tbody tr:nth-child(even) {
   background-color: #ededed;
 }
 
@@ -62,8 +62,16 @@ tfoot span {
   color: red;
 }
 
+/* col:nth-child(2) {
+  background-color: red;
+} */
+
 .bg-yellow {
   background-color: yellow;
+}
+
+.bg-olivedrab {
+  background-color: olivedrab;
 }
 
 .sizes {

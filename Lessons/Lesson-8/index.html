@@ -148,7 +148,9 @@
                             <option value="BackEnd">BackEnd</option>
                             <option value="UI/UX">UI/UX</option>
                         </select>
-
+                    </div>
+                    <div class="input-row">
+                        <label for="ice-cream-choice">Select from list</label>
                         <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
                         <datalist id="ice-cream-flavors">
                             <option value="Chocolate"></option>
@@ -157,6 +159,19 @@
                             <option value="Strawberry"></option>
                             <option value="Vanilla"></option>
                         </datalist>
+                    </div>
+                    <div class="input-row">
+                        <label>Time/Calendar</label>
+                        <input type="date">
+                        <input type="datetime-local" name="datatime">
+                    </div>
+                    <div class="input-row">
+                        <label>Color</label>
+                        <input type="color" name="color">
+                    </div>
+                    <div class="input-row">
+                        <label>File</label>
+                        <input type="file" name="file" accept="image/png, image/jpeg">
                     </div>
                     <div class="input-row">
                         <label for="message">Message</label>
@@ -176,8 +191,12 @@
         <section class="section">
             <div class="container">
                 <h2 class="title">Таблиці</h2>
-                <table>
+                <table class="worker">
                     <caption>Worker</caption>
+                    <colgroup>
+                        <col class="bg-olivedrab">
+                        <col span="2" class="bg-yellow">
+                    </colgroup>
                     <thead>
                         <tr>
                             <th>#</th>

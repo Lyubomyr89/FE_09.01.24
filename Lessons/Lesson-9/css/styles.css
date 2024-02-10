@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.position-box {
+  border: 1px solid red;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 250px;
+}
+
+/* .position-box:last-child {
+  margin-bottom: 0;
+} */
+
+.position-box:not(:first-of-type) {
+  margin-top: 40px;
+  background-color: #cacaca;
+}
+
+.position-box .box {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  /* bottom: 0;
+  right: 0; */
+  background-color: yellowgreen;
+  z-index: 2;
+}
+
+.test-box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #c22;
+  z-index: 1;
+}
+
+.position-box--absolute {
+  position: relative;
+}
+
+.absolute {
+  /* width: unset; */
+  /* height: unset; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: coral;
+}
+.fixed {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  display: block;
+  background-color: rgba(174, 103, 240, 0.735);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.sticky {
+  background: teal;
+}
+
+/* Transform */
+
+.trans-box {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  min-height: 200px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px salmon solid;
+  background-color: #ffe1e1;
+}
+.trans-box .box {
+  width: 100px;
+  height: 100px;
+  transition-duration: 0.2s;
+  transition-property: transform;
+  transition-delay: 0.2s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.rotate {
+  background-color: teal;
+  transform: rotate(45deg);
+  transform-origin: left top;
+  /* transition: 0.2s  linear transform; */
+}
+
+.trans-box:hover .rotate {
+  transform: rotate(0);
+}
+.scale {
+  background-color: tomato;
+}
+
+.scale:hover {
+  transform: scale(-1.5);
+}
+
+.skew {
+  background-color: orangered;
+}
+
+.skew {
+  transform: skew(30deg);
+}
+.translate {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: blue;
+}
+.perspective {
+  background-color: #ccc;
+}

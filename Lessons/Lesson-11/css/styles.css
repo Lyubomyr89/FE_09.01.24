@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.test-section {
+  background-color: teal;
+  min-height: 10vmax;
+  max-width: 10vmax;
+}
+
+.test-section2 {
+  background-color: rgb(115, 147, 147);
+  min-height: 10vmin;
+  max-width: 10vmin;
+}
+
+/* 
+  @media all
+  @media screen
+  @media print
+  @media (min-width: 480px)
+  @media (max-width: 480px)
+  @media (orientation: portrait)
+  @media (orientation: landscape)
+  @media speech {
+    speak: literal-punctuation;
+  }
+  */
+
+/* 
+  and, not, ","
+  */
+
+.test-media {
+  background-color: blue;
+  min-height: 50vh;
+}
+
+@media screen and (max-width: 480px),
+  (min-width: 992px) and (max-width: 1200px) {
+  .test-media {
+    background-color: yellow;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .test-media {
+    background-color: pink;
+  }
+}
+
+@media (orientation: landscape) {
+  .test-media {
+    border: 3px solid red;
+  }
+}
+
+@media (orientation: portrait) {
+  .test-media {
+    border: 10px solid rgb(26, 23, 23);
+  }
+}
+
+@media print {
+  .menu {
+    display: none !important;
+    visibility: hidden;
+  }
+
+  body {
+    background-color: #ccc !important;
+  }
+}

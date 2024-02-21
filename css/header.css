@@ -1,3 +1,7 @@
+#header-container {
+  padding-bottom: 60px;
+}
+
 .header {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -9,6 +13,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 ul {

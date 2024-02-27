@@ -14,3 +14,63 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+
+button {
+  display: inline-flex;
+  align-items: center;
+  background-color: purple;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+button svg {
+  margin-left: 6px;
+  width: 28px;
+  stroke: red;
+}
+
+button:hover {
+  color: #ccc;
+}
+
+.icon {
+  color: pink;
+}
+
+.fa-icons-box i {
+  font-size: 40px;
+  color: blue;
+}
+
+.btn-wrapper {
+  padding: 2rem;
+  text-align: center;
+}
+
+.back::before {
+  content: "\f177";
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  margin-right: 6px;
+  transition: 0.3s all linear;
+}
+
+.back:hover::before {
+  transform: translateX(-3px);
+}
+
+.go::after {
+  content: "\f178";
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  margin-left: 6px;
+  transition: 0.3s all linear;
+}
+
+.go:hover::after {
+  transform: translateX(3px);
+}

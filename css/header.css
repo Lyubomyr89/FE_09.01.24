@@ -38,11 +38,26 @@ a {
   transition: 0.2s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.menu__item {
+.menu li {
   position: relative;
+  padding: 2px 0;
 }
 
-.menu__item-link {
+.menu > li > ul {
+  left: 0;
+  top: 100%;
+}
+
+.menu > li ul {
+  display: none;
+  position: absolute;
+  margin-top: 1px;
+  background-color: #3462ab;
+  width: max-content;
+  border-radius: 6px;
+}
+
+.menu a {
   padding: 10px 20px;
   background-color: rgb(0 0 0 / 20%);
   color: #fff;
@@ -52,34 +67,21 @@ a {
   border-radius: 6px;
 }
 
-.menu__item-link:hover,
-.menu__item-link:focus {
+.menu li > a:hover {
+  background-color: rgb(0 0 0 / 60%);
+}
+
+.menu a:hover,
+.menu a:focus {
   background-color: rgb(0 0 0 / 42%);
 }
 
-.menu__item:hover > .sub-menu,
-.menu__item-link:focus + .sub-menu {
-  display: block;
+.menu > li > ul ul {
+  left: 100%;
+  top: 0;
 }
 
-.sub-menu {
-  width: max-content;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  background-color: #3462ab;
-  margin-top: 1px;
-  display: none;
-}
-.sub-menu__item-link {
-  padding: 10px 20px;
-  background-color: rgb(0 0 0 / 20%);
-  color: #fff;
-  text-transform: uppercase;
-  font-family: sans-serif;
+.menu li:hover > ul,
+.menu a:focus + ul {
   display: block;
-}
-
-.sub-menu__item-link:hover {
-  background-color: rgb(0 0 0 / 60%);
 }

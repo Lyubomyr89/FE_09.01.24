@@ -1,0 +1,110 @@
+body {
+  background-color: #ffffff;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  display: flex;
+  min-height: 100vh;
+}
+
+.box {
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.title {
+  position: relative;
+  font-weight: 900;
+  text-align: center;
+}
+
+.text-box-1 .title {
+  font-size: 120px;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+.background-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 52%;
+  background: #000;
+  transition: .4s linear all;
+}
+
+.text-box-1 .box:hover .background-1 {
+    /* height: 52%; */
+    width: 100%;
+}
+
+.img-box-2 {
+  background: url("../img/elizaveta.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: local;
+}
+
+.img-box-2 .title {
+    font-size: 180px;
+    mix-blend-mode: lighten;
+    color: #f44336c7;
+    text-shadow: 5px 2px 4px #ffe0e0;
+}
+
+.img-box-3 {
+    background: url("../img/ragusa-.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+.img-box-3 .title {
+    font-size: 180px;
+    mix-blend-mode: overlay;
+    color: #ffffff;
+}
+
+.img-box-4 {
+    background: url("../img/greg.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+.img-box-4 .title {
+    font-size: 180px;
+    mix-blend-mode: overlay;
+    color: #FF5722;
+    text-shadow: 7px -1px 3px #000000b8;
+}
+
+.img-box-5 {
+    background: url("../img/nature.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+.img-box-5 .title {
+    font-size: 180px;
+    mix-blend-mode: overlay;
+    color: #ffffffa1;
+    text-shadow: 2px -1px 11px cyan;
+}
+
+.img-box-6 {
+    background: url("../img/merlene.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+.img-box-6 .title {
+    font-size: 180px;
+    mix-blend-mode: hard-light;
+    color: #dc542b;
+}

@@ -1,11 +1,11 @@
+@charset "UTF-8";
 /* poppins-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/poppins-v20-latin/poppins-v20-latin-regular.woff2")
-    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/poppins-v20-latin/poppins-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* poppins-600 - latin */
 @font-face {
@@ -13,16 +13,13 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/poppins-v20-latin/poppins-v20-latin-600.woff2")
-    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/poppins-v20-latin/poppins-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
 :root {
   --maxWidth: 1170px;
   --primaryFont: "Poppins", sans-serif;
   --primaryTextColor: #fff;
   --primaryTextSize: 18px;
-
   /* Color */
   --primary-gray: #2b2b2b;
   --darkGray: #333;
@@ -178,6 +175,7 @@ button.button--link:focus {
   line-height: 1;
   font-size: var(--primaryTextSize);
 }
+
 .left-side {
   vertical-align: middle;
   margin-top: -3px;
@@ -190,7 +188,6 @@ button.button--link:focus {
 }
 
 /* Sections */
-
 .first-section {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -218,46 +215,39 @@ button.button--link:focus {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    column-gap: 9.25%;
+    -moz-column-gap: 9.25%;
+         column-gap: 9.25%;
   }
-
   .first-section .info-box {
     flex-basis: 46.5%;
   }
-
   .first-section .img-box {
     flex-basis: 44.25%; /* (ширина еблока / ширину контейнера) * 100% */
   }
 }
-
 /* Mobile */
 @media (max-width: 839.9px) {
   .first-section .flex-container {
     text-align: center;
   }
-
   .first-section .img-box {
     display: inline-block;
   }
-
   .first-section .info-box {
     margin-bottom: 60px;
   }
 }
-
 @media (min-width: 768px) {
   .first-section {
     padding-top: 77px;
     padding-bottom: 77px;
   }
 }
-
 @media (max-width: 480px) {
   .header .right-side {
     display: none;
   }
 }
-
 .partners {
   text-align: center;
 }
@@ -339,30 +329,26 @@ button.button--link:focus {
     flex-wrap: wrap;
     gap: 20px;
   }
-
   .card-item {
     flex-basis: calc(50% - 10px);
   }
 }
-
 @media (min-width: 992px) {
   .cards .cards-flex {
     gap: 4%;
   }
-
   .card-item {
-    flex-basis: calc(33.333% - 2.666%);
+    flex-basis: 30.667%;
   }
 }
-
 .card-item {
   text-align: center;
 }
+
 .icon-box {
   margin-bottom: 40px;
 }
+
 .card-title {
   margin-bottom: 10px;
-}
-.card-desc {
-}
+}/*# sourceMappingURL=styles.css.map */

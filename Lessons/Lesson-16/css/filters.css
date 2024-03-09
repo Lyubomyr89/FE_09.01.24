@@ -1,0 +1,34 @@
+.filter img {
+  transition: 0.3s all linear;
+  filter: grayscale(100%);
+  filter: blur(2px);
+  filter: brightness(100%);
+  filter: contrast(200%);
+  filter: hue-rotate(90deg);
+  filter: saturate(150%);
+  filter: sepia(100%);
+  filter: invert(100%);
+  width: 50%;
+}
+
+.filter img:hover {
+  filter: grayscale(0) blur(1px);
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000078;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  display: none;
+}
+
+.modal img {
+  width: 60%;
+}

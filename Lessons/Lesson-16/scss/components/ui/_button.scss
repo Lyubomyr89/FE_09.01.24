@@ -1,0 +1,46 @@
+.button {
+  background-color: transparent;
+  color: $btn-text-color;
+  padding: 0.863em 1.09em;
+  @include toRem(32px);
+  border: 0;
+  border-radius: 0.45em;
+  line-height: 1;
+  transition: 0.2s linear all;
+
+  > span {
+    text-align: center;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:focus {
+    outline: red 2px solid;
+  }
+
+  &-style-1 {
+    background-color: $brand-color-1;
+  }
+
+  &-style-2 {
+    background-color: $brand-color-2;
+  }
+
+  &-style-3 {
+    background-color: $brand-color-3;
+  }
+
+  &-style-4 {
+    background-color: $brand-color-4;
+  }
+
+  &-style-5 {
+    background-color: $brand-color-5;
+  }
+  
+  &-style-6 {
+    background-color: $brand-color-6;
+  }
+}

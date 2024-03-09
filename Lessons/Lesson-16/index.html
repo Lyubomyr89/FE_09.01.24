@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="../../css/header.css"> -->
+    <!-- <link rel="stylesheet" href="../../css/footer.css"> -->
+    <title>BEM</title>
+</head>
+
+<body>
+    <!-- <div id="header-container"></div> -->
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <a href="#" class="logo logo--border">
+                    <img src="./images/icons/logo.svg" alt="logo" class="logo__icon logo__icon--color-filter">
+                    <span class="logo__text">logo</span>
+                </a>
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link navigation__link--color-active">Home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Link</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="block">
+            <div class="container">
+                <h1>BEM</h1>
+
+                <h2>способи написання назв класів</h2>
+                <ul>
+                    <li>subTitleAbout</li>
+                    <li>sub_title_about</li>
+                    <li>sub-title-about</li>
+                </ul>
+
+                <h2>Методології</h2>
+                <ul>
+                    <li>BEM - block element modifaier</li>
+                    <li>OOCSS - розділення контейнера і вмісту за допомогою css обєктів</li>
+                    <li>SMACSS - стиль-настанова для написання CSS з пятьма категоріями для правил CSS</li>
+                    <li>SUITCSS - структуравані імена класів і значущі дефіси</li>
+                    <li>Atomic - розділення стилів на аттомарні або неділимі частини</li>
+                    <li>FSD (feutered slise design) - app, processes, pages, widgets, features, entities, shared</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <nav class="navigation">
+                <a href="#" class="logo logo--border">
+                    <img src="./images/icons/logo.svg" alt="logo" class="logo__icon">
+                    <span class="logo__text">logo</span>
+                </a>
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link navigation__link--color-active">Home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Link</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

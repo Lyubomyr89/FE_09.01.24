@@ -1,0 +1,265 @@
+html,
+body {
+  font-size: 16px;
+  background-color: #ffffff;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+textarea,
+section,
+option {
+  outline: none;
+}
+button {
+  display: block;
+  border: none;
+  background: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu__item a {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu__item a span {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.menu__item img {
+  width: 30px;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-box {
+  display: grid; 
+  
+  /*header     menu    content  footer */
+  grid-template-rows: 60px auto 1fr 50px;
+  
+                        /*content   aside */
+  grid-template-columns: 1fr        150px;
+  grid-template-areas:  
+            /* ROW-1 */  "header     header"
+            /* ROW-2 */  "menu       aside"
+            /* ROW-3 */  "content    aside"
+            /* ROW-4 */  "footer    footer";
+
+  min-height: 100vh;
+  border: 1px dotted black;
+}
+
+.grid-item {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ffffff;
+}
+
+.header {
+  /* grid-column: 1/-1; */
+
+  grid-area: header;
+
+  background-color: #26c196;
+}
+
+.nav {
+  /* grid-column: 1/2; */
+  grid-row: 2;
+
+  grid-area: menu;
+
+  background-color: #009a6a;
+}
+
+.content {
+  /* grid-row: 3;
+  grid-column: 1/2; */
+
+  grid-area: content;
+
+  background-color: #a4dbcd;
+}
+
+.aside {
+  /* grid-row: 2/4; */
+
+  grid-area: aside;
+
+  background-color: #55c7a7;
+}
+
+.footer {
+  /* grid-column: 1/-1; */
+  grid-area: footer;
+
+  background-color: #115342;
+}
+
+@media (max-width: 992px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu__item {
+    margin-bottom: 20px;
+  }
+
+  .menu__item a span {
+    display: none;
+  }
+
+  .grid-box {
+    grid-template-columns: auto 1fr 150px;
+    /*header     menu    content  footer */
+    grid-template-rows: 60px 1fr 50px;
+
+    grid-template-areas:
+                        "menu    header  header"
+                        "menu    content aside"
+                        "menu    footer  footer";
+  }
+
+  /* .header {
+    grid-column: 2/-1;
+    grid-row: 1;
+  }
+
+  .nav {
+    grid-column: 1;
+    grid-row: 1/-1;
+  }
+
+  .content {
+    grid-column: 2;
+    grid-row: 2/3;
+  }
+
+  .aside {
+    grid-row-end: 3;
+  }
+
+  .footer {
+    grid-column: 2/-1;
+    grid-row: 3;
+  } */
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: row;
+  }
+
+  .menu__item {
+    margin-bottom: 0;
+  }
+
+  .grid-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 150px 1fr 100px 60px;
+
+    grid-template-areas:
+                        "menu"
+                        "header"
+                        "content"
+                        "aside"
+                        "footer";
+  }
+
+  /* .header {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .nav {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .content {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .aside {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .footer {
+    grid-column: 1;
+    grid-row: 5;
+  } */
+}
+/* } */
+.g-box {
+  /* display: grid;
+  grid-template-columns: [left]200px  [content]1fr 150px; */
+  /* grid-template-rows: repeat(3, 150px); */
+  /* grid-gap: 20px; */
+  /* grid-column-gap: 20px;
+  grid-row-gap: 30px;
+
+  border: 1px solid red; */
+}
+
+.item {
+  /* grid-column-start:left/2;
+  grid-column-end: 3; */
+
+  /* grid-column: left/ content; */
+
+  /* grid-row-start: 1;
+  grid-row-end: 4; */
+
+  /* grid-row: 3 /2;
+
+  background-color: blueviolet;
+  border-radius: 10px;
+  border: 2px solid yellow; */
+}
+@media (max-width:992px){
+  .content{
+    background-color: #822850;
+  }
+}
+
+
+@media (min-width: 480px){
+    .content{
+      background-color: #808080;
+    }
+}

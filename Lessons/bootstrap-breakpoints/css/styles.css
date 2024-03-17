@@ -1,0 +1,104 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h2 {
+  margin-bottom: 60px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid rgb(255, 221, 0);
+}
+.container::after {
+  content: "Ширина контейнера = 100%";
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .container::after {
+    content: "Ширина контейнера 540px";
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .container::after {
+    content: "Ширина контейнера 720px";
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .container::after {
+    content: "Ширина контейнера 960px";
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .container::after {
+    content: "Ширина контейнера 1140px";
+  }
+}
+
+header {
+  background: #333;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.menu {
+  overflow: hidden;
+}
+.menu a {
+  display: inline-block;
+  color: rgb(232, 229, 229);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.section {
+  text-align: center;
+  min-height: 25vh;
+  padding: 20px 0;
+  color: white;
+}
+.section:nth-child(odd) {
+  background-color: #34170a;
+}
+.section:nth-child(even) {
+  background-color: #6c757d;
+}
+@media (min-width: 768px) {
+  .section:nth-child(odd) {
+    background-color: #a75b28;
+  }
+  .section:nth-child(even) {
+    background-color: #072f35;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

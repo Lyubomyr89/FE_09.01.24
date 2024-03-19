@@ -1,0 +1,16 @@
+:root {
+  --bs-blue: #1f098c;
+}
+
+.container {
+  /* border: 1px solid crimson; */
+}
+
+.test-color {
+  background-color: var(--bs-blue);
+}
+
+.test-block {
+  background-color: red;
+  height: 200px;
+}

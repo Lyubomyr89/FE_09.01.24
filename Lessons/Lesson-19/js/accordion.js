@@ -1,5 +1,10 @@
+/* 
+    Ви можете змінити налаштування акордеону, змінити час відкривання і т.д. 
+    Спробуйте зрозуміти як це працює.
+*/
+
 $(document).ready(function () {
-    const accBtns = $('.accordion__btn');
+    const accBtns = $('.accordion__btn'); 
     const allAccordionBody = $('.accordion__body');
     const allAccordionBtn = $('.accordion__btn');
 

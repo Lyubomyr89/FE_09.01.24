@@ -1,0 +1,143 @@
+body {
+  color: $main-color;
+  font-size: $base-size;
+  background-color: #fff;
+  min-height: 200vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: $max-width;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text {
+  background-color: #cbc9c9;
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.dark .title {
+  color: wheat;
+}
+
+.dark {
+  body {
+    background-color: #3a3a3a;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+// ---------- Accordion --------
+
+.accordion {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  // border: 1px solid red;
+
+  &__item {
+    background-color: #eece19;
+    border: 1px solid gray;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    border: none;
+
+    i {
+      transition: all 600ms linear;
+    }
+
+    &.active {
+      i {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__body {
+    display: none;
+    padding: 20px;
+  }
+}
+
+// Slick
+.slick {
+  &-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(calc(-50% - 40px));
+    z-index: 10001;
+  }
+
+  &-next {
+    right: 20px;
+  }
+
+  &-prev {
+    left: 20px;
+  }
+}
+
+.our-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  padding: 20px;
+
+  button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background-color: gray;
+    color: white;
+
+    &:hover {
+      border: 2px solid tomato;
+    }
+  }
+
+  .slick-active {
+    button {
+      border: 2px solid tomato;
+    }
+  }
+}

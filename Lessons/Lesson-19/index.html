@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/slick/slick.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <a href="#" class="logo logo--border">
+                    <img src="./images/icons/logo.svg" alt="logo" class="logo__icon logo__icon--color-filter">
+                </a>
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link navigation__link--color-active">Home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Link</a>
+                    </li>
+                </ul>
+                <div>
+                    <input type="checkbox" value="toggle" id="toggleMode">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="our-slider">
+            <div>
+                <img src="./images/slider/img-1.jpeg" alt="img">
+            </div>
+            <div>
+                <img src="./images/slider/img-2.jpeg" alt="img">
+            </div>
+            <div>
+                <img src="./images/slider/img-3.jpeg" alt="img">
+            </div>
+            <div>
+                <img src="./images/slider/img-4.jpg" alt="img">
+            </div>
+            <div>
+                <img src="./images/slider/img-5.jpeg" alt="img">
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion__item">
+                <button class="accordion__btn">
+                    <span>Item 1</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="accordion__body">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__btn">
+                    <span>Item 2</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="accordion__body">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__btn">
+                    <span>Item 3</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="accordion__body">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button class="accordion__btn">
+                    <span>Item 4</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="accordion__body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, architecto animi ducimus est quasi
+                        repudiandae, eligendi harum omnis dolorum ea quaerat similique cumque consectetur
+                        necessitatibus? Dolorum explicabo necessitatibus exercitationem omnis.</p>
+                </div>
+            </div>
+        </div>
+        <section style="display: none;">
+            <div class="container">
+                <h1 class="title">JavaScript Основи</h1>
+                <label>
+                    Price
+                    <input type="text" id="set-title">
+                </label>
+                <label>
+                    Count
+                    <input type="text" id="set-title2">
+                </label>
+                <p class="text"></p>
+
+                <div>
+                    <button class="toggleScroll">Toggle Scroll</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/f078f11493.js" crossorigin="anonymous"></script>
+    <script src="./assets/jQuery/jquery-3.7.1.min.js"></script>
+    <script src="./assets/slick/slick.min.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

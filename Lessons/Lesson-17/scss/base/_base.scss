@@ -50,10 +50,6 @@ section {
   }
 }
 
-[class^="step-"]:not(.step-7) {
-  display: none;
-}
-
 .step-1 {
   background-color: #fff7ad;
   .grid {

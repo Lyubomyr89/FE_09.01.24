@@ -1,0 +1,21 @@
+@mixin toRem($fz: $base-size) {
+  // `Product count ${var} strig` JavaScript
+  font-size: #{$fz / $base-size}rem;
+}
+
+@mixin hide-scrollbar {
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}
+
+@mixin line-clamp($max-line: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $max-line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

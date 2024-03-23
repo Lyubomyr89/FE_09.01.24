@@ -1,0 +1,39 @@
+.header {
+  padding: 40px 20px;
+  background-color: #222;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__link {
+    padding: 10px 20px;
+    color: inherit;
+    text-decoration: none;
+    background-color: orangered;
+    border-radius: 10px;
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: rgb(173, 72, 35);
+    }
+  }
+}
+
+// Block Logo
+.logo {
+  max-width: 200px;
+
+  &__icon {
+    max-width: 100%;
+  }
+}

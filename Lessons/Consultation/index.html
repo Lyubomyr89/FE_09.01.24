@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <a href="#" class="logo logo--border">
+                    <img src="./images/icons/logo.svg" alt="logo" class="logo__icon logo__icon--color-filter">
+                </a>
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link navigation__link--color-active">Home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Link</a>
+                    </li>
+                </ul>
+                <div class="toggleWrapper">
+                    <input type="checkbox" value="toggle" class="mobileToggle" id="toggleMode">
+                    <label for="toggleMode"></label>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="partners">
+            <div class="container">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="./images/slider/img-1.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/slider/img-2.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/slider/img-3.jpeg" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/f078f11493.js" crossorigin="anonymous"></script>
+    <script src="./assets/jQuery/jquery-3.7.1.min.js"></script>
+    <script src="./assets/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/fixedMenu.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
